@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'main',
     'wiki',
+    'init',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'languageDB',
         'USER': 'language',
-        'PASSWORD': 'language',
+        'PASSWORD': 'xxxxxxxx',
         'HOST': 'localhost',
         'PORT': '',
     }
