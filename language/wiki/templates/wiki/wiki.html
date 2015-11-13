@@ -12,7 +12,7 @@
   <h2>程式語言類別：</h2>
   <ul>
  	{% for category in categories %}
- 	 <li>{{category.name}}</li>
+ 	 <li><a href={% url 'wiki:category' category.name %}>{{category.name}}</a></li>
  	{% endfor %}
   </ul>
 {% else %}
