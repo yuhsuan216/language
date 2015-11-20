@@ -18,6 +18,7 @@
 {% else %}
  <p><strong>目前尚未設定程式語言類別。</strong></p>
 {% endif %}
+<p><a href={% url 'wiki:addCategory' %}>新增程式語言分類</a></p>
 <a href={% url 'main:main' %}>回首頁</a>
 <!-- <img src={% static 'wiki/img/proglang.png' %} alt=程式語言影像> -->
 </body>
