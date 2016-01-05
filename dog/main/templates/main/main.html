@@ -1,0 +1,23 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+<title>dog</title>
+<meta charset=utf-8>
+<link rel=stylesheet href={% static 'main/css/main.css' %}>
+</head>
+<body>
+<h1>狗狗百科</h1>
+<p><img src={% static 'main/img/2106280.jpg' %} alt=程式語言影像></p>
+
+
+<h2><a href=http://localhost:8000/main/ >首頁</a></h2>
+
+<h2><a href={% url 'hello:hello' %}>犬類品種</a></h2>
+
+
+<h2><a href={% url 'qaz:qaz' %}>認養資訊</a></h2>
+
+<h2><a href={% url 'zxc:zxc' %} }>寵物醫院</a></h2>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+<title>狗狗百科</title>
+<meta charset=utf-8>
+<link rel=stylesheet href={% static 'main/css/main.css' %}>
+</head>
+<body>
+<h1>犬類品種</h1>
+
+<table>
+<tr>
+<td><a href={% url 'aaa:aaa' %}><img src={% static 'hello/img/0.jpg' %} alt=程式語言影像></a></td>
+</tr>
+<tr>
+<td><a href={% url 'bbb:bbb' %}><img src={% static 'hello/img/s24937797.jpg' %} alt=程式語言影像></a></td>
+</tr>
+<tr>
+<td><a href={% url 'ccc:ccc' %}><img src={% static 'hello/img/14389996529077.jpg' %} alt=程式語言影像></a></td>
+</tr>
+<tr>
+<td><a href={% url 'ddd:ddd' %}><img src={% static 'hello/img/images_resized.jpg' %} alt=程式語言影像></a></td>
+</tr>
+<tr>
+<td><a href={% url 'eee:eee' %}><img src={% static 'hello/img/88645904_m.jpg' %} alt=程式語言影像></a></td>
+</tr>
+</table>
+<p><a href={% url 'main:main' %}>回首頁</a></p>
+</body>
+</html>

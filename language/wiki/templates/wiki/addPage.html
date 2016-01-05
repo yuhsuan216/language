@@ -8,13 +8,15 @@
 </head>
 <body>
 
-<h1>在"{{category.name}}"分類中新增一筆頁面</h1>
+{% extends "main/base.html" %}
+{% block heading %}在"{{category.name}}"分類中新增一筆頁面{% endblock %}
+{% block content %}
 <form method=post action={% url 'wiki:addPage' category.name %}>
  {% csrf_token %}
  {{form.as_p}}
  <input type=submit value=送出>
 </form>
-<a href={% url 'wiki:category' category.name %}>回{{category.name}}頁</a>
-
+<p><a href={% url 'wiki:category' category.id %}>回「{{category.name}}」頁面</a></p>
+{% endblock %}
 </body>
 </html>
